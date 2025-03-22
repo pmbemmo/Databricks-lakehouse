@@ -1,0 +1,44 @@
+name: Deploy to Databricks Prod
+
+on:
+  push:
+    branches:
+      - main  # Se déclenche uniquement sur un push dans main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Cloner le Repository
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Installer Databricks CLI
+        run: pip install databricks-cli
+
+      - name: 🔑 Authentification Databricks
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          databricks configure --host "$DATABRICKS_HOST" --token "$DATABRICKS_TOKEN"
+
+      - name: 📂 Déployer les Notebooks vers Unity Catalog (prod)
+        run: |
+          databricks workspace import_dir notebooks/ /Workspace/Repos/prod --overwrite
+
+      - name: 🔥 Créer un Job de Validation
+        run: |
+          databricks jobs create --json '{
+            "name": "Validation Job",
+            "tasks": [{
+              "notebook_task": {
+                "notebook_path": "/Workspace/Repos/prod/validate_notebook"
+              }
+            }]
+          }'
+
+      - name: ✅ Exécuter le Job de Validation
+        run: |
+          JOB_ID=$(databricks jobs list | grep "Validation Job" | awk '{print $1}')
+          databricks jobs run-now --job-id $JOB_ID
