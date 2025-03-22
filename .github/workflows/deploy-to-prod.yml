@@ -1,12 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy to Databricks PROD
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: main
+    branches: 
+        - main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -42,7 +43,7 @@ jobs:
 
       - name: Extract branch name
         shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        run: echo "##[set-output name=main;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
 
       - name: Update Databricks Git folder
