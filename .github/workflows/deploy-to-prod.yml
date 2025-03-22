@@ -25,7 +25,7 @@ jobs:
 
       - name: 📂 Déployer les Notebooks vers Unity Catalog (prod)
         run: |
-          databricks workspace import_dir notebooks/ /Workspace/Repos/prod --overwrite
+          databricks workspace import_dir notebooks/ /Workspace/Repos/Databricks_PROD --overwrite
 
       - name: 🔥 Créer un Job de Validation
         run: |
@@ -33,7 +33,7 @@ jobs:
             "name": "Validation Job",
             "tasks": [{
               "notebook_task": {
-                "notebook_path": "/Workspace/Repos/prod/validate_notebook"
+                "notebook_path": "/Workspace/Repos/Databricks_PROD/validate_notebook"
               }
             }]
           }'
