@@ -1,0 +1,13 @@
+schema_json = """
+{
+  "type": "struct",
+  "fields": [
+    {"name": "GameID", "type": "string", "nullable": true},
+    {"name": "Publisher", "type": "string", "nullable": true},
+    {"name": "Rating", "type": "string", "nullable": true},
+    {"name": "Genre", "type": "string", "nullable": true},
+    {"name": "Game_Length", "type": "integer", "nullable": true},
+    {"name": "Game_release_date", "type": "date", "nullable": true}
+  ]
+}
+"""
