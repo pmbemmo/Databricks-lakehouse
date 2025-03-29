@@ -1,0 +1,24 @@
+schema_json = """
+{
+  "type": "struct",
+  "fields": [
+    {"name": "PlayerID", "type": "string", "nullable": true},
+    {"name": "GameID", "type": "string", "nullable": true},
+    {"name": "SessionID", "type": "string", "nullable": true},
+    {"name": "Activity_type", "type": "string", "nullable": true},
+    {"name": "Level", "type": "integer", "nullable": true},
+    {"name": "ExperiencePoints", "type": "float", "nullable": true},
+    {"name": "AchievementUnlocked", "type": "integer", "nullable": true},
+    {"name": "CurrencyEarned", "type": "float", "nullable": true},
+    {"name": "CurrencySpent", "type": "float", "nullable": true},
+    {"name": "QuestCompleted", "type": "integer", "nullable": true},
+    {"name": "EnemiesDefeated", "type": "integer", "nullable": true},
+    {"name": "ItemsCollected", "type": "integer", "nullable": true},
+    {"name": "Deaths", "type": "integer", "nullable": true},
+    {"name": "DistanceTravelled", "type": "float", "nullable": true},
+    {"name": "ChatMessagesSent", "type": "integer", "nullable": true},
+    {"name": "TeamEventsParticipated", "type": "integer", "nullable": true},
+    {"name": "PlayMode", "type": "string", "nullable": true},
+  ]
+}
+"""
