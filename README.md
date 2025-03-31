@@ -127,7 +127,10 @@ The structured data is moved from **Delta Lake** to **Databricks Warehouse**, en
 - **Fact and dimension tables** (e.g., fact_player_activity,dim_game).
 - **Aggregated session metrics** (e.g., average session duration). 
 - **Aggregated genre metrics** (e.g., most popular game genres).  
-- **Aggregated publisher metrics** (e.g., revenue by publisher).  
+- **Aggregated publisher metrics** (e.g., revenue by publisher).
+
+![Fact-table](https://github.com/pmbemmo/Databricks-lakehouse/blob/cc6227317f5e7a0d08e7e3ec65d0077a7b63679c/gameactivity_lakehouse_project/requirements/fact-table.png)
+
 
 ---
 
