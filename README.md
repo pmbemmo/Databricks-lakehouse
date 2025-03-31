@@ -165,6 +165,3 @@ A **GitHub Actions-based CI/CD pipeline** automates deployment whenever changes 
 ---
 
 
-
-Many thanks to **[Dorianteffo](https://github.com/Dorianteffo)** for inspiring this project.  
-
