@@ -13,7 +13,7 @@ Additionally, a **CI/CD workflow** is implemented to automatically deploy update
 ---
 
 ## **Project Architecture**  
-![Project Architecture](gameactivity_lakehouse_project/requirements/Databricks_lakehouse-Architecture.png?raw=true)
+![Project Architecture]([gameactivity_lakehouse_project/requirements/Databricks_lakehouse-Architecture.png](https://github.com/pmbemmo/Databricks_DEV/tree/main/gameactivity_lakehouse_project/requirements#:~:text=..-,Databricks_lakehouse%2DArchitecture.png,-Add%20files%20via)?raw=true)
 
 ---
 
