@@ -124,7 +124,8 @@ The transformed data is stored in **Databricks Volumes**, ensuring scalability f
 #### **Databricks Warehouse**  
 The structured data is moved from **Delta Lake** to **Databricks Warehouse**, enabling OLAP operations. SQL queries and aggregations are performed to derive key insights:  
 
-- **Aggregated session metrics** (e.g., average session duration).  
+- **Fact and dimension tables** (e.g., fact_player_activity,dim_game).
+- **Aggregated session metrics** (e.g., average session duration). 
 - **Aggregated genre metrics** (e.g., most popular game genres).  
 - **Aggregated publisher metrics** (e.g., revenue by publisher).  
 
