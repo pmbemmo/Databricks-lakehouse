@@ -21,6 +21,7 @@ Additionally, a **CI/CD workflow** is implemented to automatically deploy update
 
 This project utilizes the following technologies:  
 
+- **SQL**: For the initialization of the lakehouse.
 - **Python**: For data generation, extraction, and transformation.  
 - **Faker Library**: For generating synthetic game activity data.  
 - **AWS Delta Lake**: For scalable storage.  
