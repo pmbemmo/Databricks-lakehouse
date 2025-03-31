@@ -105,6 +105,7 @@ Key extracted attributes include:
 ### **2. Data Transformation**  
 
 Once extracted, the raw data undergoes cleaning and transformation to improve quality and consistency.  
+![Transformation](https://github.com/pmbemmo/Databricks-lakehouse/blob/0b92b0ad4a67bd441f19db6b86c9c5ac8e3fe14f/gameactivity_lakehouse_project/requirements/Data-transformation.png)
 
 #### **Cleaning Processes**  
 
@@ -147,6 +148,8 @@ The entire workflow is **automated and scheduled** using **Databricks Workflows*
 - **Task Definitions**: Handle data extraction, transformation, and loading.  
 
 This ensures an **efficient**, **scalable**, and **automated** data pipeline.  
+![Worflow](https://github.com/pmbemmo/Databricks-lakehouse/blob/0b92b0ad4a67bd441f19db6b86c9c5ac8e3fe14f/gameactivity_lakehouse_project/requirements/Job-Workflow.png)
+
 
 ---
 
@@ -157,6 +160,7 @@ A **GitHub Actions-based CI/CD pipeline** automates deployment whenever changes 
 - **Version control** for data processing scripts.  
 - **Automated testing and validation** before deployment.  
 - **Seamless updates** to the production environment.  
+![CICD](https://github.com/pmbemmo/Databricks-lakehouse/blob/fdf90ff8481a5202b9f0545ab18f2b10a4cbaf76/gameactivity_lakehouse_project/requirements/CICD-DeployToProd.png)
 
 ---
 
