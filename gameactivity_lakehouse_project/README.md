@@ -132,7 +132,7 @@ The structured data is moved from **Delta Lake** to **Databricks Warehouse**, en
 
 The cleaned and structured data is visualized using **AI/BI Genie** with interactive dashboards:  
 
-- **Geographical distribution** of game genres.  
+- ** Distribution** of game genres.  
 - **Top publishers** based on revenue and player engagement.  
 - **Filters and drill-downs** for analyzing specific activity types.  
 
